@@ -48,7 +48,7 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write("Joueur 1: 0   Joueur 2: 0", align="center", font=("Courier", 24, "normal"))
+pen.write("Joueur A: 0   Joueur B: 0", align="center", font=("Courier", 24, "normal"))
 
 # Fonctions de mouvement des raquettes
 def paddle_left_up():
@@ -119,7 +119,7 @@ while True:
     elif ball.xcor() > 390:
         score_a += 1
         pen.clear()
-        pen.write(f"Joueur 1: {score_a}   Joueur 2: {score_b}", align="center", font=("Courier", 24, "normal"))
+        pen.write(f"Joueur A: {score_a}   Joueur B: {score_b}", align="center", font=("Courier", 24, "normal"))
         ball.speed(40)
         ball.goto(0, 0)
         ball.dx = (5 / 100) * (-1)**random.randint(0, 1)
@@ -127,7 +127,7 @@ while True:
     elif ball.xcor() < -390:
         score_b += 1
         pen.clear()
-        pen.write(f"Joueur 1: {score_a}   Joueur 2: {score_b}", align="center", font=("Courier", 24, "normal"))
+        pen.write(f"Joueur A: {score_a}   Joueur B: {score_b}", align="center", font=("Courier", 24, "normal"))
         ball.speed(40)
         ball.goto(0, 0)
         ball.dx = (5 / 100) * (-1)**random.randint(0, 1)
